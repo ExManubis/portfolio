@@ -1,0 +1,76 @@
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* VARIABLES */
+* {
+  /* PRIMITIVES */
+  /* greys */
+  --grey00: #ffffff;
+  --grey50: #e6e6e6;
+  --grey100: #c3c3c3;
+  --grey150: #898989;
+  --grey200: #000000;
+
+  /* colors */
+  --cyan: #008282;
+  --blue: #000082;
+
+  /* TOKENS */
+  /* html background */
+  --html_bg: var(--grey200);
+
+  /* wallpaper */
+  --wallpaper: var(--cyan);
+
+  /* text */
+  --body: var(--grey200);
+  --fg_window_top: var(--grey00);
+  --fg_icons: var(--grey00);
+
+  /* menubar */
+  --menu_bg: var(--grey100);
+  --menu_border_outer: var(--grey00);
+  --menu_border_inner: var(--grey150);
+  --menu_border_hover: var(--grey50);
+}
+
+@font-face {
+  font-family: "pixelated";
+  src: url("../fonts/windows.woff");
+}
+
+html {
+  background-color: var(--html_bg);
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+body {
+  background-color: var(--wallpaper);
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+}
+
+nav {
+  bottom: 0;
+  height: 5vh;
+  width: 100vw;
+  background-color: var(--menu_bg);
+  position: fixed;
+  border-top: 3px ridge var(--menu_border_outer);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
