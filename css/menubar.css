@@ -1,0 +1,23 @@
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-self: left;
+}
+
+.clock {
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+  height: 90%;
+  border: 2px inset var(--menu_border_inner);
+  margin: 3px 5px;
+}
+
+.time {
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: "pixelated";
+}

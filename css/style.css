@@ -40,7 +40,12 @@ img {
   /* menubar */
   --menu_bg: var(--grey100);
   --menu_border_outer: var(--grey00);
-  --menu_border_inner: var(--grey200);
+  --menu_border_inner: var(--grey150);
+}
+
+@font-face {
+  font-family: "pixelated";
+  src: url("../fonts/windows.woff");
 }
 
 html {
@@ -57,10 +62,14 @@ body {
   margin: auto;
 }
 
-menu {
+nav {
   bottom: 0;
   height: 5vh;
   width: 100vw;
   background-color: var(--menu_bg);
   position: fixed;
+  border-top: 3px ridge var(--menu_border_outer);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
