@@ -41,6 +41,7 @@ img {
   --menu_bg: var(--grey100);
   --menu_border_outer: var(--grey00);
   --menu_border_inner: var(--grey150);
+  --menu_border_hover: var(--grey50);
 }
 
 @font-face {

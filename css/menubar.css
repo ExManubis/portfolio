@@ -2,6 +2,11 @@
   display: flex;
   flex-direction: row;
   align-self: left;
+  width: 90vw;
+  height: 100%;
+  margin-left: 5px;
+  align-items: center;
+  align-content: center;
 }
 
 .clock {
@@ -10,7 +15,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 10%;
+  width: 20%;
   height: 90%;
   border: 2px inset var(--menu_border_inner);
   margin: 3px 5px;
@@ -20,4 +25,29 @@
   text-align: center;
   font-size: 1.2rem;
   font-family: "pixelated";
+}
+
+.start_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 90%;
+  border: 2px outset black;
+  text-align: center;
+  font-family: "pixelated";
+  font-size: 1.2rem;
+}
+
+.start_button:hover {
+  border: 2px inset var(--menu_border_hover);
+}
+
+@media screen and (min-width: 800px) {
+  .start_button {
+    width: 10%;
+  }
+  .clock {
+    width: 10%;
+  }
 }
