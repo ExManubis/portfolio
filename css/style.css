@@ -10,3 +10,57 @@ img {
   height: auto;
   display: block;
 }
+
+/* VARIABLES */
+* {
+  /* PRIMITIVES */
+  /* greys */
+  --grey00: #ffffff;
+  --grey50: #e6e6e6;
+  --grey100: #c3c3c3;
+  --grey150: #898989;
+  --grey200: #000000;
+
+  /* colors */
+  --cyan: #008282;
+  --blue: #000082;
+
+  /* TOKENS */
+  /* html background */
+  --html_bg: var(--grey200);
+
+  /* wallpaper */
+  --wallpaper: var(--cyan);
+
+  /* text */
+  --body: var(--grey200);
+  --fg_window_top: var(--grey00);
+  --fg_icons: var(--grey00);
+
+  /* menubar */
+  --menu_bg: var(--grey100);
+  --menu_border_outer: var(--grey00);
+  --menu_border_inner: var(--grey200);
+}
+
+html {
+  background-color: var(--html_bg);
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+body {
+  background-color: var(--wallpaper);
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+}
+
+menu {
+  bottom: 0;
+  height: 5vh;
+  width: 100vw;
+  background-color: var(--menu_bg);
+  position: fixed;
+}
