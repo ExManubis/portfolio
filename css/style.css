@@ -42,6 +42,15 @@ img {
   --menu_border_outer: var(--grey00);
   --menu_border_inner: var(--grey150);
   --menu_border_hover: var(--grey50);
+
+  /* windows */
+  --window_top_bg: var(--blue);
+  --window_top_fg: var(--grey00);
+  --window_top_bg_unfocused: var(--grey150);
+  --window_bg: var(--grey100);
+  --window_border: var(--grey50);
+  --topbox_bg: var(--grey100);
+  --topbox_border: var(--grey50);
 }
 
 @font-face {
