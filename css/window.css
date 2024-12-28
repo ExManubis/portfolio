@@ -1,0 +1,140 @@
+.window {
+  position: fixed;
+  height: 95vh;
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  background-color: var(--window_bg);
+  border: 3px outset var(--window_border);
+}
+
+.window.active {
+  display: flex;
+}
+
+.winow.window_focus {
+  z-index: 10;
+}
+
+.window.max {
+  top: 0;
+  left: 0;
+  height: 95%;
+  width: 100%;
+}
+
+.window_top {
+  display: flex;
+  flex-direction: row;
+  height: 5%;
+  width: 100%;
+  background-color: var(--window_top_bg_unfocused);
+  margin-bottom: 5px;
+  color: var(--window_top_fg);
+  place-content: space-between;
+  font-size: 1rem;
+  font-family: "pixelated";
+  padding: 3px;
+}
+
+.window.window_focus .window_top {
+  background-color: var(--window_top_bg);
+}
+
+.window_title {
+  align-self: center;
+}
+
+.window_buttons {
+  display: flex;
+  flex-direction: row;
+  place-self: right;
+  align-items: center;
+  padding-right: 3px;
+}
+
+.topbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  margin-left: 5px;
+  background-color: var(--topbox_bg);
+  border: 1px outset var(--topbox_border);
+  cursor: pointer;
+}
+
+.topbox:hover {
+  border: 1px inset #000000;
+}
+
+.topbox.close .line {
+  margin-left: 4px;
+  width: 70%;
+  height: 2.5px;
+  background-color: black;
+}
+
+.topbox.close .line:nth-child(1) {
+  transform-origin: left;
+  transform: rotate(45deg);
+}
+
+.topbox.close .line:nth-child(2) {
+  transform-origin: left;
+  transform: rotate(-45deg);
+}
+
+.topbox.max {
+  display: none;
+}
+
+.topbox.max .line_box {
+  margin: 7.5% 10% 0% 10%;
+  border: 2.5px solid black;
+  height: 80%;
+}
+
+.topbox.max .line {
+  margin: 0% 10% 5% 10%;
+  height: 4px;
+  width: 80%;
+  transform: translateY(-18px);
+  background-color: black;
+}
+
+.topbox.min {
+  display: none;
+}
+
+.topbox.min .line {
+  width: 40%;
+  height: 3px;
+  background-color: black;
+  margin-bottom: 10%;
+}
+
+@media screen and (min-width: 800px) {
+  .window {
+    height: 60%;
+    width: 30%;
+  }
+
+  .topbox.max {
+    display: unset;
+    justify-content: start;
+  }
+
+  .topbox.min {
+    display: flex;
+    justify-content: end;
+    z-index: 15;
+  }
+
+  .velkommen {
+    top: 10%;
+    right: 5%;
+  }
+}

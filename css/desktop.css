@@ -1,0 +1,27 @@
+.desktop {
+  position: fixed;
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  margin: 4% 2%;
+  touch-action: manipulation;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  font-family: "pixelated";
+  font-size: 1rem;
+  color: var(--fg_icons);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 5%;
+  width: 5%;
+  cursor: pointer;
+}
+
+.icon.focus {
+  border: 1px dotted black;
+}

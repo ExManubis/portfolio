@@ -7,6 +7,7 @@
   margin-left: 5px;
   align-items: center;
   align-content: center;
+  cursor: pointer;
 }
 
 .clock {
@@ -43,11 +44,53 @@
   border: 2px inset var(--menu_border_hover);
 }
 
+.app_drawer {
+  display: flex;
+  flex-direction: row;
+  height: 90%;
+  width: 100%;
+  margin: auto 0.25rem;
+}
+
+.app {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  max-width: 100%;
+  padding-left: 0.5vw;
+  padding-right: 15vw;
+  border: 2px outset black;
+  background-color: var(--menu_bg);
+}
+
+.app.active {
+  display: flex;
+}
+
+.app.app_focus {
+  background-color: #e1e1e1;
+  border: 2px inset black;
+}
+
+.app img {
+  height: 80%;
+  width: auto;
+  margin-right: 1vw;
+}
+
+.app_title {
+  font-family: "pixelated";
+}
+
 @media screen and (min-width: 800px) {
   .start_button {
     width: 10%;
   }
   .clock {
     width: 10%;
+  }
+
+  .app {
+    max-width: 20%;
   }
 }

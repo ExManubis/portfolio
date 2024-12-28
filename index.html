@@ -6,21 +6,73 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/menubar.css" />
     <link rel="stylesheet" href="css/crt.css" />
+    <link rel="stylesheet" href="css/window.css" />
+    <link rel="stylesheet" href="css/desktop.css" />
     <title>Mikkels Portfolio</title>
   </head>
   <body>
     <div class="crt_filter"></div>
     <main>
-      <h1>Hello, world!</h1>
+      <div class="desktop">
+        <div class="icon" id="velkommen">
+          <img src="icons/placeholder.png" alt="placeholder icon" />
+          Velkommen.exe
+        </div>
+      </div>
+      <div class="window active velkommen window_focus" id="velkommen">
+        <div class="window_top">
+          <div class="window_title">Velkommen</div>
+          <div class="window_buttons">
+            <div class="topbox min"><div class="line"></div></div>
+            <div class="topbox max">
+              <div class="line_box"></div>
+              <div class="line"></div>
+            </div>
+            <div class="topbox close">
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+        <div class="content" id="about_me_content">
+          <h1>Velkommen!</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Repudiandae, enim dicta tempore iusto id aliquam, nobis eum
+            temporibus autem cupiditate eveniet. Saepe voluptates officia,
+            consectetur libero veniam pariatur sequi! Quisquam saepe blanditiis
+            a laboriosam tempore corporis libero ab officiis aliquam
+            praesentium, expedita nobis perferendis eos, repellat sint odit?
+            Vitae temporibus, consectetur doloremque quam ad quisquam
+            accusantium fugiat beatae, ullam mollitia atque nesciunt quidem
+            voluptatem minima unde pariatur exercitationem dolores quaerat
+            architecto aliquam voluptate veniam? Odit repellat tenetur illo
+            magni accusamus eum, eius a sint, esse qui, saepe architecto quas
+            repudiandae rerum expedita ratione? Eum voluptas, ea quae soluta
+            neque quisquam maxime, consequatur ab placeat nulla alias?
+            Voluptatem soluta obcaecati culpa, molestiae sequi amet numquam
+            deleniti ea error, facilis debitis laborum.
+          </p>
+        </div>
+      </div>
     </main>
     <nav>
       <div class="buttons">
         <div class="start_button">
           <div class="start_text">Start</div>
         </div>
+        <div class="app_drawer">
+          <div class="app velkommen app_focus active" id="velkommen">
+            <img src="icons/placeholder.png" alt="" />
+            <div class="app_title">Velkommen</div>
+          </div>
+        </div>
       </div>
       <div class="clock"><div class="time"></div></div>
     </nav>
     <script src="js/clock.js"></script>
+    <script src="js/window_buttons.js"></script>
+    <script src="js/desktop.js"></script>
+    <script src="js/app_drawer.js"></script>
   </body>
 </html>
