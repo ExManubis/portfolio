@@ -43,6 +43,10 @@
   border: 2px inset var(--menu_border_hover);
 }
 
+.start_button.active {
+  border: 2px inset var(--menu_border_hover);
+}
+
 .start_button img {
   height: 80%;
   width: auto;

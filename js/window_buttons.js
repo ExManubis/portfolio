@@ -15,6 +15,8 @@ min.addEventListener("click", (event) => {
 // MAXIMIZE WINDOW
 max.addEventListener("click", (event) => {
   let targetWindow = event.currentTarget.parentNode.parentNode.parentNode;
+  targetWindow.style.top = 0;
+  targetWindow.style.left = 0;
   targetWindow.classList.toggle("max");
 });
 
