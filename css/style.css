@@ -68,6 +68,16 @@ img {
   src: url("../fonts/cmd.woff");
 }
 
+@font-face {
+  font-family: "ibm";
+  src: url("../fonts/ibm.woff");
+}
+
+@font-face {
+  font-family: "lucida";
+  src: url("../fonts/lucida.woff");
+}
+
 html {
   background-color: var(--html_bg);
   height: 100vh;
@@ -96,4 +106,13 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+h1 {
+  font-size: 1.75rem;
+  font-family: times;
+}
+
+p {
+  font-family: times;
 }
