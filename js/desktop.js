@@ -6,9 +6,9 @@ const appFocus = document.querySelector(".app_focus");
 const desktop = document.querySelector(".desktop");
 
 // ICON SELECT
-icon.addEventListener("click", () => {
-  icon.classList.toggle("focus");
-});
+// icon.addEventListener("click", () => {
+//   icon.classList.toggle("focus");
+// });
 
 // OPEN APPLICATION
 icon.addEventListener("dblclick", () => {
