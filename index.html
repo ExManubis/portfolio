@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/crt.css" />
     <link rel="stylesheet" href="css/window.css" />
     <link rel="stylesheet" href="css/desktop.css" />
+    <link rel="stylesheet" href="css/start_menu.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
@@ -19,7 +20,7 @@
     <main>
       <div class="desktop">
         <div class="icon" id="velkommen">
-          <img src="icons/placeholder.png" alt="placeholder icon" />
+          <img src="icons/crt.png" alt="placeholder icon" />
           <div class="icon_text">Velkommen</div>
         </div>
       </div>
@@ -60,16 +61,43 @@
         </div>
       </div>
     </main>
+    <menu>
+      <div class="start_menu">
+        <div class="start_side">
+          <div class="start_side_1">
+            <span style="opacity: 0.5">CodeMonkey</span>95
+          </div>
+        </div>
+        <ul>
+          <li>
+            <div class="start_item crt_filter_toggle" id="crt_settings">
+              <img src="icons/crt.png" alt="crt filter icon" />CRT filter
+              <div class="arrow">&gt;</div>
+            </div>
+          </li>
+          <li>
+            <div class="toggle">
+              <div class="toggle_on active">On</div>
+              <div class="toggle_off">Off</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="setting crt_settings">
+        <div class="toggle_on_d active">On</div>
+        <div class="toggle_off_d">Off</div>
+      </div>
+    </menu>
     <nav>
       <div class="buttons">
         <div class="start_button">
-          <img src="imgs/codemonkey.svg" alt="" />
+          <img src="imgs/codemonkey.png" alt="" />
 
           <div class="start_text">Start</div>
         </div>
         <div class="app_drawer">
           <div class="app velkommen app_focus active" id="velkommen">
-            <img src="icons/placeholder.png" alt="" />
+            <img src="icons/crt.png" alt="" />
             <div class="app_title">Velkommen</div>
           </div>
         </div>

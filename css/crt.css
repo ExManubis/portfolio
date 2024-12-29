@@ -10,6 +10,10 @@
   pointer-events: none;
 }
 
+.crt_filter.off {
+  display: none;
+}
+
 @media screen {
   .crt_filter {
     animation: scanlines infinite 0.5s linear;

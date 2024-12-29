@@ -51,11 +51,21 @@ img {
   --window_border: var(--grey50);
   --topbox_bg: var(--grey100);
   --topbox_border: var(--grey50);
+
+  /* start menu */
+  --start_bg: var(--grey100);
+  --start_side_bg: var(--grey150);
+  --start_hover: var(--blue);
 }
 
 @font-face {
   font-family: "pixelated";
   src: url("../fonts/windows.woff");
+}
+
+@font-face {
+  font-family: "cmd";
+  src: url("../fonts/cmd.woff");
 }
 
 html {
