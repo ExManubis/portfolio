@@ -1,8 +1,8 @@
 // CONSTANTS
-const icon = document.querySelector(".icon");
-const windowSelector = document.querySelector(".window");
-const windowFocus = document.querySelector(".window_focus");
-const appFocus = document.querySelector(".app_focus");
+const icon = document.querySelectorAll(".icon");
+const windowSelector = document.querySelectorAll(".window");
+const windowFocus = document.querySelectorAll(".window_focus");
+const appDrawer = document.querySelectorAll(".app");
 const desktop = document.querySelector(".desktop");
 const startButton = document.querySelector(".start_button");
 const startMenu = document.querySelector(".start_menu");
@@ -20,33 +20,48 @@ const setting = document.querySelector(".setting");
 // });
 
 // OPEN APPLICATION
-icon.addEventListener("dblclick", () => {
-  let targetID = icon.id;
-  windowFocus.classList.remove("window_focus");
-  appFocus.classList.remove("app_focus");
-  let application = document.querySelectorAll(`.${targetID}`);
-  application[0].classList.add("window_focus", "active");
-  application[1].classList.add("active", "app_focus");
+icon.forEach((element) => {
+  element.addEventListener("dblclick", () => {
+    console.log("icon click");
+    let targetID = element.id;
+    windowSelector.forEach((element) => {
+      element.classList.remove("window_focus");
+    });
+    appDrawer.forEach((element) => {
+      element.classList.remove("app_focus");
+    });
+    let application = document.querySelectorAll(`.${targetID}`);
+    console.log(application);
+    application[0].classList.add("window_focus", "active");
+    application[1].classList.add("active", "app_focus");
+  });
 });
 
 // WINDOW FOCUS
-windowSelector.addEventListener("click", (event) => {
-  let targetID = event.currentTarget.id;
-  let application = document.querySelectorAll(`.${targetID}`);
-  if (application[1].classList.contains("app_focus")) {
-    console.log("class already active");
-  } else {
+windowSelector.forEach((element) => {
+  element.addEventListener("click", (event) => {
+    let targetID = event.currentTarget.id;
+    let application = document.querySelectorAll(`.${targetID}`);
     let targetWindow = event.currentTarget;
-    windowFocus.classList.remove("window_focus");
+    windowSelector.forEach((element) => {
+      element.classList.remove("window_focus");
+    });
     targetWindow.classList.add("window_focus");
+    appDrawer.forEach((element) => {
+      element.classList.remove("app_focus");
+    });
     application[1].classList.add("app_focus");
-  }
+  });
 });
 
 // REMOVE FOCUS ON DESKTOP CLICK
 desktop.addEventListener("click", () => {
-  windowFocus.classList.remove("window_focus");
-  appFocus.classList.remove("app_focus");
+  windowSelector.forEach((element) => {
+    element.classList.remove("window_focus");
+  });
+  appDrawer.forEach((element) => {
+    element.classList.remove("app_focus");
+  });
   startButton.classList.remove("active");
   startMenu.classList.remove("active");
   startItem.classList.remove("active");

@@ -12,7 +12,7 @@
   display: flex;
 }
 
-.winow.window_focus {
+.window.window_focus {
   z-index: 10;
 }
 
