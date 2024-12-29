@@ -76,10 +76,6 @@ body {
   margin: auto;
 }
 
-body img {
-  z-index: 0;
-}
-
 nav {
   bottom: 0;
   height: 5vh;
