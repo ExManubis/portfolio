@@ -24,6 +24,7 @@ img {
   /* colors */
   --cyan: #008282;
   --blue: #000082;
+  --yellow: #ffffdf;
 
   /* TOKENS */
   /* html background */
@@ -51,6 +52,8 @@ img {
   --window_border: var(--grey50);
   --topbox_bg: var(--grey100);
   --topbox_border: var(--grey50);
+  --element_bg: var(--grey00);
+  --element_bg_alt: var(--yellow);
 
   /* start menu */
   --start_bg: var(--grey100);
@@ -102,6 +105,7 @@ nav {
   width: 100vw;
   background-color: var(--menu_bg);
   position: fixed;
+  z-index: 100;
   border-top: 3px ridge var(--menu_border_outer);
   display: flex;
   flex-direction: row;
@@ -115,4 +119,25 @@ h1 {
 
 p {
   font-family: times;
+  font-size: 1.1rem;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 25px;
+  margin-left: 100px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: repeating-conic-gradient(var(--grey50) 0% 25%, transparent 0% 50%)
+    50% / 3px 3px;
+  /* border: 2px inset var(--window_border); */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--grey150);
+  border: 2px outset var(--window_border);
 }

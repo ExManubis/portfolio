@@ -20,6 +20,7 @@
   height: 25vw;
   width: 27.5vw;
   cursor: pointer;
+  margin: 10px;
 }
 
 .icon.focus {
