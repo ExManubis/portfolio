@@ -33,7 +33,7 @@
   align-items: center;
   width: 35%;
   height: 90%;
-  border: 2px outset black;
+  border: 2px outset var(--menu_border_inner);
   text-align: center;
   font-family: "pixelated";
   font-size: 1.2rem;
@@ -65,12 +65,18 @@
 .app {
   display: none;
   flex-direction: row;
+  justify-content: start;
   align-items: center;
   max-width: 100%;
   padding-left: 0.5vw;
-  padding-right: 15vw;
-  border: 2px outset black;
+  padding-right: 5vw;
+  border: 2px outset var(--menu_border_inner);
   background-color: var(--menu_bg);
+  margin-left: 3px;
+}
+
+.app:hover {
+  border: 2px inset var(--menu_border_inner);
 }
 
 .app.active {
@@ -79,7 +85,7 @@
 
 .app.app_focus {
   background-color: #e1e1e1;
-  border: 2px inset black;
+  border: 2px inset var(--menu_border_inner);
 }
 
 .app img {

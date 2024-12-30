@@ -24,6 +24,7 @@ img {
   /* colors */
   --cyan: #008282;
   --blue: #000082;
+  --yellow: #ffffdf;
 
   /* TOKENS */
   /* html background */
@@ -51,6 +52,8 @@ img {
   --window_border: var(--grey50);
   --topbox_bg: var(--grey100);
   --topbox_border: var(--grey50);
+  --element_bg: var(--grey00);
+  --element_bg_alt: var(--yellow);
 
   /* start menu */
   --start_bg: var(--grey100);
@@ -115,4 +118,17 @@ h1 {
 
 p {
   font-family: times;
+  font-size: 1.1rem;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
 }

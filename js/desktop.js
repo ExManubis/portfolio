@@ -21,20 +21,38 @@ const setting = document.querySelector(".setting");
 
 // OPEN APPLICATION
 icon.forEach((element) => {
-  element.addEventListener("dblclick", () => {
-    console.log("icon click");
-    let targetID = element.id;
-    windowSelector.forEach((element) => {
-      element.classList.remove("window_focus");
+  var x = 800,
+    w =
+      window.innerWidth ||
+      document.documentElement.clientWidth ||
+      document.body.clientWidth;
+  if (w < x) {
+    element.addEventListener("click", () => {
+      let targetID = element.id;
+      windowSelector.forEach((element) => {
+        element.classList.remove("window_focus");
+      });
+      appDrawer.forEach((element) => {
+        element.classList.remove("app_focus");
+      });
+      let application = document.querySelectorAll(`.${targetID}`);
+      application[0].classList.add("window_focus", "active");
+      application[1].classList.add("active", "app_focus");
     });
-    appDrawer.forEach((element) => {
-      element.classList.remove("app_focus");
+  } else {
+    element.addEventListener("dblclick", () => {
+      let targetID = element.id;
+      windowSelector.forEach((element) => {
+        element.classList.remove("window_focus");
+      });
+      appDrawer.forEach((element) => {
+        element.classList.remove("app_focus");
+      });
+      let application = document.querySelectorAll(`.${targetID}`);
+      application[0].classList.add("window_focus", "active");
+      application[1].classList.add("active", "app_focus");
     });
-    let application = document.querySelectorAll(`.${targetID}`);
-    console.log(application);
-    application[0].classList.add("window_focus", "active");
-    application[1].classList.add("active", "app_focus");
-  });
+  }
 });
 
 // WINDOW FOCUS
