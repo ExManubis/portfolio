@@ -44,6 +44,8 @@
 }
 
 .start_button.active {
+  background: repeating-conic-gradient(var(--grey50) 0% 25%, transparent 0% 50%)
+    50% / 3px 3px;
   border: 2px inset var(--menu_border_hover);
 }
 
@@ -84,7 +86,8 @@
 }
 
 .app.app_focus {
-  background-color: #e1e1e1;
+  background: repeating-conic-gradient(var(--grey50) 0% 25%, transparent 0% 50%)
+    50% / 3px 3px;
   border: 2px inset var(--menu_border_inner);
 }
 

@@ -105,6 +105,7 @@ nav {
   width: 100vw;
   background-color: var(--menu_bg);
   position: fixed;
+  z-index: 100;
   border-top: 3px ridge var(--menu_border_outer);
   display: flex;
   flex-direction: row;
@@ -124,11 +125,19 @@ p {
 ::-webkit-scrollbar {
   -webkit-appearance: none;
   -moz-appearance: none;
-  width: 7px;
+  width: 25px;
+  margin-left: 100px;
 }
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: repeating-conic-gradient(var(--grey50) 0% 25%, transparent 0% 50%)
+    50% / 3px 3px;
+  /* border: 2px inset var(--window_border); */
+}
+
+/* Handle */
 ::-webkit-scrollbar-thumb {
-  border-radius: 4px;
-  background-color: rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+  background: var(--grey150);
+  border: 2px outset var(--window_border);
 }
