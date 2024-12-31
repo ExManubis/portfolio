@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#007979" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/menubar.css" />
     <link rel="stylesheet" href="css/crt.css" />
@@ -19,13 +20,53 @@
     <div class="crt_filter"></div>
     <main>
       <div class="desktop">
-        <div class="icon" id="velkommen">
-          <img src="icons/velkommen.png" alt="placeholder icon" />
-          <div class="icon_text">Velkommen</div>
-        </div>
-        <div class="icon" id="om_mig">
-          <img src="icons/om_mig.png" alt="" />
-          <div class="icon_text">Om mig</div>
+        <div class="icon_container">
+          <div class="icon" id="velkommen">
+            <img src="icons/velkommen.png" alt="placeholder icon" />
+            <div class="icon_text">Velkommen</div>
+          </div>
+          <div class="icon" id="om_mig">
+            <img src="icons/om_mig.png" alt="" />
+            <div class="icon_text">Om mig</div>
+          </div>
+          <div class="icon" id="t2">
+            <img src="icons/t2.png" alt="" />
+            <div class="icon_text">T2 - Min Computer</div>
+          </div>
+          <div class="icon" id="t3">
+            <img src="icons/film.png" alt="" />
+            <div class="icon_text">T3 - The Film Bucket Challenge</div>
+          </div>
+          <div class="icon" id="t4">
+            <img src="icons/cosmic.png" alt="" />
+            <div class="icon_text">T4 - Cosmic Defender</div>
+          </div>
+          <div class="icon" id="game">
+            <img src="icons/cosmic.png" alt="" />
+            <div class="icon_text">Cosmic Defender.exe</div>
+          </div>
+          <div class="icon" id="t5_1">
+            <img src="icons/passion.png" alt="" />
+            <div class="icon_text">T5 - Passionssite</div>
+          </div>
+          <div class="icon" id="t5_2">
+            <img src="icons/boob.png" alt="" />
+            <div class="icon_text">T5 - HeyBOOB</div>
+          </div>
+          <div class="icon" id="t6">
+            <img src="icons/codemonkey.png" alt="" />
+            <div class="icon_text">T6 - Portfolio</div>
+          </div>
+          <a href="https://github.com/ExManubis" target="_blank">
+            <div class="icon" id="github">
+              <img src="icons/github.png" alt="" />
+              <div class="icon_text">Github</div>
+            </div>
+          </a>
+          <div class="icon" id="nostalgi">
+            <img src="icons/folder.png" alt="" />
+            <div class="icon_text">Nostalgi</div>
+          </div>
         </div>
       </div>
       <div class="window active velkommen window_focus" id="velkommen">
@@ -63,6 +104,7 @@
           </p>
         </div>
       </div>
+
       <div class="window om_mig" id="om_mig">
         <div class="window_top">
           <div class="window_title">Om mig</div>
@@ -153,6 +195,72 @@
           </div>
         </div>
       </div>
+
+      <div class="window t2" id="t2">
+        <div class="window_top">
+          <div class="window_title">Min Computer</div>
+          <div class="window_buttons">
+            <div class="topbox min"><div class="line"></div></div>
+            <div class="topbox max">
+              <div class="line_box"></div>
+              <div class="line"></div>
+            </div>
+            <div class="topbox close">
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+        <div class="content" id="t2_container">
+          <div class="t2_content">
+            <h1>T2 - Grunlæggende Web</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="window t3" id="t3">
+        <div class="window_top">
+          <div class="window_title">Film Bucket Challenge</div>
+          <div class="window_buttons">
+            <div class="topbox min"><div class="line"></div></div>
+            <div class="topbox max">
+              <div class="line_box"></div>
+              <div class="line"></div>
+            </div>
+            <div class="topbox close">
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+        <div class="content" id="t3_container">
+          <div class="t3_content">
+            <h1>T2 - Grunlæggende Web</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="window t4" id="t4">
+        <div class="window_top">
+          <div class="window_title">Cosmic Defender</div>
+          <div class="window_buttons">
+            <div class="topbox min"><div class="line"></div></div>
+            <div class="topbox max">
+              <div class="line_box"></div>
+              <div class="line"></div>
+            </div>
+            <div class="topbox close">
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+        <div class="content" id="t4_container">
+          <div class="t4_content">
+            <h1>T2 - Grunlæggende Web</h1>
+          </div>
+        </div>
+      </div>
     </main>
     <menu>
       <div class="start_menu">
@@ -196,6 +304,14 @@
           <div class="app om_mig" id="om_mig">
             <img src="icons/om_mig.png" alt="" />
             <div class="app_title">Om mig</div>
+          </div>
+          <div class="app t2" id="t2">
+            <img src="icons/t2.png" alt="" />
+            <div class="app_title">Min Computer</div>
+          </div>
+          <div class="app t3" id="t3">
+            <img src="icons/t2.png" alt="" />
+            <div class="app_title">Film Bucket Challenge</div>
           </div>
         </div>
       </div>

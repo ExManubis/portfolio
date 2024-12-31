@@ -183,6 +183,7 @@
   height: 100%;
   padding: 1rem;
   line-height: 150%;
+  overflow-x: hidden;
 }
 
 #velkommen_content img {
