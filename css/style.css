@@ -129,6 +129,9 @@ h1 {
 p {
   font-family: times;
   font-size: 1.1rem;
+  text-wrap: pretty;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 ::-webkit-scrollbar {
