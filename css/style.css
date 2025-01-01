@@ -41,7 +41,7 @@ img {
   /* menubar */
   --menu_bg: var(--grey100);
   --menu_border_outer: var(--grey00);
-  --menu_border_inner: var(--grey150);
+  --menu_border_inner: var(--grey00);
   --menu_border_hover: var(--grey50);
 
   /* windows */
@@ -54,6 +54,7 @@ img {
   --topbox_border: var(--grey50);
   --element_bg: var(--grey00);
   --element_bg_alt: var(--yellow);
+  --element_bg_cyan: var(--cyan);
 
   /* start menu */
   --start_bg: var(--grey100);
@@ -86,6 +87,7 @@ html {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
+  cursor: url("../imgs/cursor.png"), auto;
 }
 
 body {
@@ -97,6 +99,11 @@ body {
   height: 100vh;
   width: 100vw;
   margin: auto;
+}
+
+main {
+  height: 95vh;
+  top: 0;
 }
 
 nav {
@@ -133,7 +140,6 @@ p {
 ::-webkit-scrollbar-track {
   background: repeating-conic-gradient(var(--grey50) 0% 25%, transparent 0% 50%)
     50% / 3px 3px;
-  /* border: 2px inset var(--window_border); */
 }
 
 /* Handle */
