@@ -325,6 +325,7 @@
   .t2_content {
     flex-direction: row-reverse;
     align-items: start;
+    margin-right: 5px;
   }
 
   .t2_img {
@@ -347,6 +348,10 @@
     left: 8%;
     width: 80%;
     height: 75%;
+  }
+
+  .t3_content {
+    margin-right: 5px;
   }
 
   .t3_content.first {
