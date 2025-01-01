@@ -71,7 +71,7 @@
   align-items: center;
   max-width: 100%;
   padding-left: 0.5vw;
-  padding-right: 5vw;
+  padding-right: 1vw;
   border: 2px outset var(--menu_border_inner);
   background-color: var(--menu_bg);
   margin-left: 3px;
@@ -83,6 +83,7 @@
 
 .app.active {
   display: flex;
+  overflow: hidden;
 }
 
 .app.app_focus {
@@ -99,6 +100,10 @@
 
 .app_title {
   font-family: "pixelated";
+  font-size: 1.15rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 @media screen and (min-width: 800px) {
@@ -107,9 +112,10 @@
   }
   .clock {
     width: 10%;
+    background-color: var(--menu_bg);
   }
 
   .app {
-    max-width: 25%;
+    width: clamp(5%, 25%, 25%);
   }
 }
