@@ -145,10 +145,11 @@ p {
 ::-webkit-scrollbar-track {
   background: repeating-conic-gradient(var(--grey50) 0% 25%, transparent 0% 50%)
     50% / 3px 3px;
+  border: 2px inset var(--window_border);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: var(--grey150);
-  border: 2px outset var(--window_border);
+  border: 2.5px outset var(--window_border);
 }
