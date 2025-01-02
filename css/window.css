@@ -574,6 +574,10 @@
     height: 70%;
   }
 
+  #t5_1_container {
+    height: 100%;
+  }
+
   .t5_1_content {
     display: flex;
     flex-direction: row-reverse;
