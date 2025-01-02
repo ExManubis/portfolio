@@ -574,13 +574,11 @@
     height: 70%;
   }
 
-  #t5_1_container {
-  }
-
   .t5_1_content {
     display: flex;
     flex-direction: row-reverse;
     overflow-y: hidden;
+    height: 100%;
   }
 
   .t5_1_text {
