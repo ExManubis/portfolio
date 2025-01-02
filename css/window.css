@@ -344,19 +344,25 @@
 .t5_video {
   display: flex;
   flex-direction: column;
+  height: 40%;
 }
 
-.t5_video video {
+.t5_youtube {
   width: 100%;
-  height: auto;
+  height: 50%;
   margin-top: 1vh;
+  margin-bottom: 1vh;
   border: 3px inset var(--window_border);
+  object-fit: cover;
+  align-self: stretch;
 }
 
 .t5_video img {
   width: 100%;
-  height: auto;
+  height: 50%;
   border: 3px inset var(--window_border);
+  object-fit: cover;
+  align-self: stretch;
 }
 
 /* Desktop */
@@ -578,17 +584,19 @@
   }
 
   .t5_1_text {
-    width: 40%;
+    width: 50%;
     height: auto;
     overflow-y: auto;
   }
 
   .t5_video {
-    width: 60%;
+    width: 50%;
     height: 100%;
   }
 
-  .t5_video video {
+  .t5_youtube {
+    height: 100%;
     margin-top: 0;
+    margin-bottom: 0;
   }
 }
