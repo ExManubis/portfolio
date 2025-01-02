@@ -50,6 +50,7 @@
 }
 
 .start_button img {
+  aspect-ratio: 28/32;
   height: 80%;
   width: auto;
   margin-left: 5px;
