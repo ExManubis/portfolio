@@ -35,6 +35,7 @@ img {
 
   /* text */
   --body: var(--grey200);
+  --body_inverted: var(--grey00);
   --fg_window_top: var(--grey00);
   --fg_icons: var(--grey00);
 
@@ -88,17 +89,25 @@ html {
   width: 100vw;
   overflow: hidden;
   cursor: url("../imgs/cursor.png"), auto;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 body {
   background-color: var(--wallpaper);
-  background-image: url("../imgs/codemonkey_bg.svg");
+  background-image: url("../imgs/codemonkey_bg.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 40%;
+  background-size: 60%;
   height: 100vh;
   width: 100vw;
   margin: auto;
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    background-size: 30%;
+  }
 }
 
 main {
@@ -127,6 +136,9 @@ h1 {
 p {
   font-family: times;
   font-size: 1.1rem;
+  text-wrap: pretty;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 ::-webkit-scrollbar {
@@ -140,10 +152,11 @@ p {
 ::-webkit-scrollbar-track {
   background: repeating-conic-gradient(var(--grey50) 0% 25%, transparent 0% 50%)
     50% / 3px 3px;
+  border: 2px inset var(--window_border);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: var(--grey150);
-  border: 2px outset var(--window_border);
+  border: 2.5px outset var(--window_border);
 }

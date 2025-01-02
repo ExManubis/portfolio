@@ -4,6 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#007979" />
+    <link
+      rel="preload"
+      href="fonts/windows.woff"
+      as="font"
+      type="font/woff"
+      crossorigin
+    />
+
+    <link
+      rel="preload"
+      href="fonts/cmd.woff"
+      as="font"
+      type="font/woff"
+      crossorigin
+    />
+    <link rel="preload" href="imgs/cursor.png" as="image" type="image/png" />
+    <link
+      rel="preload"
+      href="imgs/codemonkey_bg.png"
+      as="image"
+      type="image/png"
+    />
+    <!-- Preload icons -->
+    <link
+      rel="preload"
+      href="icons/codemonkey.png"
+      as="image"
+      type="image/png"
+    />
+    <link rel="preload" href="icons/boob.png" as="image" type="image/png" />
+    <link rel="preload" href="icons/cosmic.png" as="image" type="image/png" />
+    <link rel="preload" href="icons/film.png" as="image" type="image/png" />
+    <link rel="preload" href="icons/github.png" as="image" type="image/png" />
+    <link rel="preload" href="icons/om_mig.png" as="image" type="image/png" />
+    <link rel="preload" href="icons/passion.png" as="image" type="image/png" />
+    <link rel="preload" href="icons/t2.png" as="image" type="image/png" />
+    <link
+      rel="preload"
+      href="icons/velkommen.png"
+      as="image"
+      type="image/png"
+    />
+
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/menubar.css" />
     <link rel="stylesheet" href="css/crt.css" />
@@ -17,8 +60,10 @@
     <title>Mikkels Portfolio</title>
   </head>
   <body>
+    <!-- CRT filter overlay -->
     <div class="crt_filter"></div>
     <main>
+      <!-- Desktop container -->
       <div class="desktop">
         <div class="icon_container">
           <div class="icon" id="velkommen">
@@ -60,7 +105,7 @@
           <a href="https://github.com/ExManubis" target="_blank">
             <div class="icon" id="github">
               <img src="icons/github.png" alt="" />
-              <div class="icon_text">Github</div>
+              <div class="icon_text">Github Profil</div>
             </div>
           </a>
           <!-- <div class="icon" id="nostalgi"> -->
@@ -69,6 +114,8 @@
           <!-- </div> -->
         </div>
       </div>
+
+      <!-- Velkommen window -->
       <div class="window active velkommen window_focus" id="velkommen">
         <div class="window_top">
           <div class="window_title">Velkommen</div>
@@ -88,12 +135,15 @@
           <h1>Velkommen til mit site!</h1>
           <img src="imgs/velkommen/portrait.webp" alt="" />
           <p>
-            Hej, jeg hedder Mikkel og laver webdesign. Siden, du er kommet ind
-            på, er min hyldest til de computere jeg voksede op med, og foran
-            hvilke jeg tilbragte en stor del af min barndom. Siden indeholder de
-            forskellige projekter jeg har arbejdet på i løbet af 1. semester på
-            Multimedie Designer Udannelsen på KEA. Jeg håber at du vil klikke
-            rundt, og være med på min rejse ind i webdesign-verdenen!
+            Hej, mit navn er Mikkel og jeg laver webdesign.
+            <br />
+            <br />
+            Sitet, du er kommet ind på, er min hyldest til de computere jeg
+            voksede op med, og foran hvilke jeg tilbragte en stor del af min
+            barndom. Siden indeholder de forskellige projekter jeg har arbejdet
+            på i løbet af 1. semester på Multimedie Designer Udannelsen på KEA.
+            Jeg håber at du vil klikke rundt, og være med på min rejse ind i
+            webdesign-verdenen!
             <br />
             <br />
             Har du lyst til at hyre mig til et projekt, eller vil du bare have
@@ -105,6 +155,7 @@
         </div>
       </div>
 
+      <!-- Om mig window -->
       <div class="window om_mig" id="om_mig">
         <div class="window_top">
           <div class="window_title">Om mig</div>
@@ -196,6 +247,7 @@
         </div>
       </div>
 
+      <!-- Min Computer window -->
       <div class="window t2" id="t2">
         <div class="window_top">
           <div class="window_title">Min Computer</div>
@@ -254,6 +306,7 @@
         </div>
       </div>
 
+      <!-- Film Bucket Challenge window -->
       <div class="window t3" id="t3">
         <div class="window_top">
           <div class="window_title">Film Bucket Challenge</div>
@@ -429,6 +482,7 @@
         </div>
       </div>
 
+      <!-- Cosmic Defender window -->
       <div class="window t4" id="t4">
         <div class="window_top">
           <div class="window_title">Cosmic Defender</div>
@@ -446,11 +500,75 @@
         </div>
         <div class="content" id="t4_container">
           <div class="t4_content">
-            <h1>T4 - Grunlæggende Animation</h1>
+            <div class="t4_1">
+              <h1>T4: Grunlæggende Animation</h1>
+              <div class="t4_text">
+                <p>
+                  I vores fjerde tema skulle vi designe og kode et spil ved brug
+                  af vectografik, og Javascript. Temaet var vores introduktion
+                  til brug af Adobe Illustrator til at skabe vectografik, samt
+                  programmering i Javascript til at skabe interaktivitet på
+                  hjemmesider. Temaet var også vores introduktion til brug af
+                  git, hvilket jeg havde erfaring med i forvejen.
+                  <br />
+                  Gameplayet i vores spil skulle indeholde gode og dårlige ting
+                  man kunne klikke på, og ting der enten kom ind fra siden eller
+                  toppen. Jeg valgte at lave et spil hvor man fra et rumskip
+                  skulle skyde meteorerne men ikke ramme de andre rumskibe.
+                  <br />
+                  <br />
+                  Spillet hedder Cosmic Defender og du kan prøve det
+                  <a
+                    href="https://mmd.codemonkey.computer/kea/04_animation/website/html/spil.html"
+                    target="_blank"
+                    >her</a
+                  >.
+                </p>
+                <h2>Idé og Designprocess</h2>
+                <p>
+                  For at få idéer til temaet for vores spil, gjorde vi brug af
+                  forskellige idé-generingsmetoder, så som cross-method og
+                  peer-to-peer. Efter vi havde valgt vores endelige idé,
+                  udarbejdede vi en papir-prototype på vores spil. Herefter gik
+                  jeg fra papir-prototypen til at begynde at tegne de enkelte
+                  spil-elementer i Illustrator. Jeg ville oprindeligt have lavet
+                  spillet i pixel-art, men gik bort fra dette da jeg ikke havde
+                  nok erfaring med det, og det derfor ville have taget for lang
+                  tid. Derfor endte jeg med at lave det i en ret simpel
+                  håndtegnet stil, for at holde mig inden for tidsrammen.
+                </p>
+                <h2>Programmering og test</h2>
+                <p>
+                  Inden jeg begynde at programmere udarbejdede jeg et
+                  state-machine diagram, over de forskellige funktioner der
+                  skulle være i min Javascript-kode til spillet. Herefter satte
+                  jeg alle spil-elementer ind i HTML og CSS, efter et udleveret
+                  layoutdiagram. Da dette var gjort begyndte jeg at programmere
+                  de forskellige funktioner. Spillet blev lavet i forskellige
+                  versioner, som blev styret med git, og hvor der hele tiden
+                  blev lagt mere funktionalitet på. Den sidste tid brugte jeg på
+                  at finpudse og rette fejl i koden, samt at komponere
+                  baggrundsmusikken. Musikken blev lavet i bit-tune stil, for at
+                  give spillet er lidt retro feel. Slutteligt lavede jeg
+                  brugertest på spillet. Testen viste at de fleste godt kunne
+                  lide spillet, men mange syntes at det var lidt for svært, og
+                  derfor nedjusterede jeg sværhedsgraden, ved at justere lidt på
+                  de forskellige animations-timere.
+                </p>
+              </div>
+            </div>
+            <div class="t4_img">
+              <img src="imgs/t4/1.webp" alt="screenshot af spil" />
+              <img
+                src="imgs/t4/2.webp"
+                alt="screenshot af state-machine diagram"
+              />
+            </div>
           </div>
         </div>
       </div>
 
+      <!-- Passionssite window -->
       <div class="window t5_1" id="t5_1">
         <div class="window_top">
           <div class="window_title">Passionssite</div>
@@ -468,11 +586,12 @@
         </div>
         <div class="content" id="t5_1_container">
           <div class="t5_1_content">
-            <h1>T5 - Passionssite</h1>
+            <h1>T5: Passionssite</h1>
           </div>
         </div>
       </div>
 
+      <!-- HeyBOOB window -->
       <div class="window t5_2" id="t5_2">
         <div class="window_top">
           <div class="window_title">HeyBOOB</div>
@@ -490,11 +609,12 @@
         </div>
         <div class="content" id="t5_2_container">
           <div class="t5_2_content">
-            <h1>T5 - HeyBOOB</h1>
+            <h1>T5: HeyBOOB</h1>
           </div>
         </div>
       </div>
 
+      <!-- Portfolio window -->
       <div class="window t6" id="t6">
         <div class="window_top">
           <div class="window_title">Portfolio</div>
@@ -512,12 +632,13 @@
         </div>
         <div class="content" id="t6_container">
           <div class="t6_content">
-            <h1>T6 - Portfolio</h1>
+            <h1>T6: Portfolio</h1>
           </div>
         </div>
       </div>
     </main>
     <menu>
+      <!-- Start menu -->
       <div class="start_menu">
         <div class="start_side">
           <div class="start_side_1">
@@ -526,12 +647,14 @@
         </div>
         <ul>
           <li>
+            <!-- CRT filter -->
             <div class="start_item crt_filter_toggle" id="crt_settings">
               <img src="icons/crt.png" alt="crt filter icon" />CRT filter
               <div class="arrow">&gt;</div>
             </div>
           </li>
           <li>
+            <!-- CRT filter toggle for mobile -->
             <div class="toggle">
               <div class="toggle_on active">On</div>
               <div class="toggle_off">Off</div>
@@ -539,18 +662,21 @@
           </li>
         </ul>
       </div>
+      <!-- CRT filter sidemenu for desktop -->
       <div class="setting crt_settings">
         <div class="toggle_on_d active">On</div>
         <div class="toggle_off_d">Off</div>
       </div>
     </menu>
     <nav>
+      <!-- Start button -->
       <div class="buttons">
         <div class="start_button">
-          <img src="imgs/codemonkey.png" alt="" />
+          <img src="icons/codemonkey.png" alt="" />
 
           <div class="start_text">Start</div>
         </div>
+        <!-- App drawer -->
         <div class="app_drawer">
           <div class="app velkommen app_focus active" id="velkommen">
             <img src="icons/velkommen.png" alt="" />
