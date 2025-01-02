@@ -26,6 +26,8 @@
       as="image"
       type="image/png"
     />
+    <link rel="preload" href="imgs/t5_1/1.webp" as="image" type="image/webp" />
+
     <!-- Preload icons -->
     <link
       rel="preload"
@@ -710,12 +712,31 @@
               <div class="toggle_off">Off</div>
             </div>
           </li>
+          <li>
+            <div class="start_item audio_toggle" id="audio_settings">
+              <img src="icons/volume.png" alt="Audio icon" />
+              Click-sound
+              <div class="arrow">&gt;</div>
+            </div>
+          </li>
+          <!-- Sound toggle for mobile -->
+          <li>
+            <div class="toggle">
+              <div class="audio_toggle_on">On</div>
+              <div class="audio_toggle_off active">Off</div>
+            </div>
+          </li>
         </ul>
       </div>
       <!-- CRT filter sidemenu for desktop -->
       <div class="setting crt_settings">
         <div class="toggle_on_d active">On</div>
         <div class="toggle_off_d">Off</div>
+      </div>
+      <!-- Audio toggle sidemenu for desktop -->
+      <div class="setting audio_settings">
+        <div class="audio_toggle_on">On</div>
+        <div class="audio_toggle_off active">Off</div>
       </div>
     </menu>
     <nav>
@@ -770,9 +791,9 @@
       <div class="clock"><div class="time"></div></div>
     </nav>
     <!-- <audio src="sound/startup.mp3" id="startup"></audio> -->
-    <!-- <audio src="sound/click.mp3" id="mouse_click"></audio> -->
+    <audio src="sound/click.mp3" id="mouse_click"></audio>
     <!-- <script src="js/startup.js"></script> -->
-    <!-- <script src="js/click.js"></script> -->
+    <script src="js/click.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/window_buttons.js"></script>
     <script src="js/desktop.js"></script>

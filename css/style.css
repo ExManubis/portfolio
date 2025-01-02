@@ -99,6 +99,9 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 60%;
+  /* background-image: url("../imgs/ibm.bmp"); */
+  /* background-repeat: repeat; */
+  /* background-size: 68px 64px; */
   height: 100vh;
   width: 100vw;
   margin: auto;

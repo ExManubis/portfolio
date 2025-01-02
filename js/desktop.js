@@ -6,13 +6,15 @@ const appDrawer = document.querySelectorAll(".app");
 const desktop = document.querySelector(".desktop");
 const startButton = document.querySelector(".start_button");
 const startMenu = document.querySelector(".start_menu");
-const startItem = document.querySelector(".start_item");
+const startItem = document.querySelectorAll(".start_item");
 const crt = document.querySelector(".crt_filter");
 const crtOnM = document.querySelector(".toggle_on");
 const crtOffM = document.querySelector(".toggle_off");
 const crtOnD = document.querySelector(".toggle_on_d");
 const crtOffD = document.querySelector(".toggle_off_d");
-const setting = document.querySelector(".setting");
+const setting = document.querySelectorAll(".setting");
+const audioToggleOn = document.querySelectorAll(".audio_toggle_on");
+const audioToggleOff = document.querySelectorAll(".audio_toggle_off");
 
 // ICON SELECT
 // icon.addEventListener("click", () => {
@@ -82,24 +84,34 @@ desktop.addEventListener("click", () => {
   });
   startButton.classList.remove("active");
   startMenu.classList.remove("active");
-  startItem.classList.remove("active");
-  setting.classList.remove("active");
+  startItem.forEach((element) => {
+    element.classList.remove("active");
+  });
+  setting.forEach((element) => {
+    element.classList.remove("active");
+  });
 });
 
 // START MENU
 startButton.addEventListener("click", () => {
   startButton.classList.toggle("active");
   startMenu.classList.toggle("active");
-  startItem.classList.remove("active");
-  setting.classList.remove("active");
+  startItem.forEach((element) => {
+    element.classList.remove("active");
+  });
+  setting.forEach((element) => {
+    element.classList.remove("active");
+  });
 });
 
 // START MENU ITEMS
-startItem.addEventListener("click", (event) => {
-  event.currentTarget.classList.toggle("active");
-  let targetID = event.currentTarget.id;
-  let targetMenu = document.querySelector(`.${targetID}`);
-  targetMenu.classList.toggle("active");
+startItem.forEach((element) => {
+  element.addEventListener("click", (event) => {
+    event.currentTarget.classList.toggle("active");
+    let targetID = event.currentTarget.id;
+    let targetMenu = document.querySelector(`.${targetID}`);
+    targetMenu.classList.toggle("active");
+  });
 });
 
 // CRT SETTING
@@ -133,4 +145,25 @@ crtOffD.addEventListener("click", () => {
   crtOffM.classList.add("active");
   crtOnM.classList.remove("active");
   crtOnD.classList.remove("active");
+});
+
+// CLICK EFFECT SETTING
+audioToggleOn.forEach((element) => {
+  element.addEventListener("click", () => {
+    audioToggleOff.forEach((element) => {
+      element.classList.remove("active");
+    });
+    element.classList.add("active");
+    clickSound.volume = 1;
+  });
+});
+
+audioToggleOff.forEach((element) => {
+  element.addEventListener("click", () => {
+    audioToggleOn.forEach((element) => {
+      element.classList.remove("active");
+    });
+    element.classList.add("active");
+    clickSound.volume = 0;
+  });
 });
