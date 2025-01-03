@@ -85,6 +85,16 @@ menu {
   display: none;
 }
 
+.audio_settings {
+  display: none;
+}
+
+.audio_toggle_on.active,
+.audio_toggle_off.active {
+  font-family: "cmd";
+  font-size: 2rem;
+}
+
 @media screen and (min-width: 800px) {
   .start_menu {
     height: 500px;
@@ -153,9 +163,44 @@ menu {
     color: white;
   }
 
-  }
   .toggle_on_d.active,
   .toggle_off_d.active {
+    font-family: "cmd";
+    font-size: 2rem;
+  }
+
+  .audio_settings.active {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 405px;
+    bottom: calc(5vh + 340px);
+    width: 200px;
+    height: 100px;
+    background-color: var(--start_bg);
+    border: 3px outset var(--window_border);
+    z-index: 20;
+  }
+
+  .audio_toggle_on,
+  .audio_toggle_off {
+    font-family: "pixelated";
+    font-size: 1.5rem;
+    height: 50%;
+    text-align: center;
+    padding-top: 10px;
+    cursor: pointer;
+  }
+
+  .audio_toggle_on:hover,
+  .audio_toggle_off:hover {
+    background-color: var(--start_hover);
+    color: white;
+  }
+
+  .audio_toggle_on.active,
+  .audio_toggle_off.active {
     font-family: "cmd";
     font-size: 2rem;
   }
