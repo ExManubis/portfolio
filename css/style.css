@@ -108,6 +108,13 @@ body {
   margin: auto;
 }
 
+body.retro {
+  background-image: url("../imgs/wallpaper.bmp");
+  background-repeat: repeat;
+  background-size: 50% 50%;
+  background-position: unset;
+}
+
 @media screen and (min-width: 800px) {
   body {
     /* background-size: 30%; */

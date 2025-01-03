@@ -20,6 +20,7 @@
   height: 90%;
   border: 2px inset var(--menu_border_inner);
   margin: 3px 5px;
+  cursor: pointer;
 }
 
 .time {
