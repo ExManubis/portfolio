@@ -95,7 +95,7 @@ html {
 
 body {
   background-color: var(--wallpaper);
-  background-image: url("../imgs/codemonkey_bg.png");
+  background-image: url("../imgs/codemonkey_bg_dither.png");
   background-repeat: no-repeat;
   background-position: center;
   /* background-size: 50vw 50vh; */
