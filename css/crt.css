@@ -16,7 +16,7 @@
 
 @media screen {
   .crt_filter {
-    animation: scanlines infinite 0.5s linear;
+    animation: scanlines infinite 1s linear;
   }
 }
 @keyframes scanlines {
