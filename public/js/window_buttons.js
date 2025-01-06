@@ -1,6 +1,6 @@
 // CONSTANTS
 const min = document.querySelectorAll(".topbox.min");
-const max = document.querySelector(".topbox.max");
+// const max = document.querySelector(".topbox.max");
 const close = document.querySelectorAll(".topbox.close");
 
 // MINIMIZE WINDOW
@@ -15,12 +15,12 @@ min.forEach((element) => {
 });
 
 // MAXIMIZE WINDOW
-max.addEventListener("click", (event) => {
-  let targetWindow = event.currentTarget.parentNode.parentNode.parentNode;
-  targetWindow.style.top = 0;
-  targetWindow.style.left = 0;
-  targetWindow.classList.toggle("max");
-});
+// max.addEventListener("click", (event) => {
+//   let targetWindow = event.currentTarget.parentNode.parentNode.parentNode;
+//   targetWindow.style.top = 0;
+//   targetWindow.style.left = 0;
+//   targetWindow.classList.toggle("max");
+// });
 
 // CLOSE WINDOW
 close.forEach((element) => {
