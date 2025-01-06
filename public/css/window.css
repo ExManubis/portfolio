@@ -27,7 +27,7 @@
 .window_top {
   display: flex;
   flex-direction: row;
-  height: 5%;
+  max-height: 50px;
   width: 100%;
   background-color: var(--window_top_bg_unfocused);
   margin-bottom: 5px;
