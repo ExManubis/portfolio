@@ -147,8 +147,8 @@ menu {
     z-index: 20;
   }
 
-  .toggle_on_d,
-  .toggle_off_d {
+  .toggle_on,
+  .toggle_off {
     font-family: "pixelated";
     font-size: 1.5rem;
     height: 50%;
@@ -157,14 +157,14 @@ menu {
     cursor: pointer;
   }
 
-  .toggle_on_d:hover,
-  .toggle_off_d:hover {
+  .toggle_on:hover,
+  .toggle_off:hover {
     background-color: var(--start_hover);
     color: white;
   }
 
-  .toggle_on_d.active,
-  .toggle_off_d.active {
+  .toggle_on.active,
+  .toggle_off.active {
     font-family: "cmd";
     font-size: 2rem;
   }
